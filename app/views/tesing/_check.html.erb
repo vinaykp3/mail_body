@@ -1,0 +1,25 @@
+<html>
+<head>
+  <script type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+        $("#button").click(function() {
+        var rand = Math.random().toString().split(".")[1];
+        var input = '<input type="file" name="images[file'+rand+']" class="'+rand+'" />'
+        $(this).before('<br/>' + input + "<br/>");
+        });
+        $("#button").trigger("click");
+        });
+    </script>
+</head>
+<body>
+    <h1>Test Mail</h1>
+    <%= form_tag send_mail_tesing_index_path, :multipart => true do%>
+        <%= text_area_tag "body" %> <br/>
+        <input type="button" value="Add Another Attachment" id="button"/><br/>
+        <%= submit_tag "Send" %>
+    <% end %>
+
+<%= link_to "Add New User to Mail List", new_user_path %>
+</body>
+</html>

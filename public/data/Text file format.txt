@@ -1,0 +1,5 @@
+InvHeader^Bill Format^CustomerId^CustomerName^CustomerAddress^Contact Person^Email Id^Phone Number^CellNo.^Type Of Customer^Category Of Customer^InvoiceNumber^InvDate^InvTime^Sales Peron^Region^status^Remarks^PODate^Po Reference
+
+ItemDetail^InvoiceNumber^SLno^ItemDesc^Qty^Rate^Amount^Purchase Type^Ussage Type^PIN Number^SerialNo^Product Description^Group
+
+InvFooter^InvoiceNumber^ServiceName^NetAmount^SEZ^Service Tax Rate^Service Tax Amount^Cess Rate^ Cess Amount^He Cess rate^HE Cess Amount^Total^Signature Name^Add/Less^Amount
